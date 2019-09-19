@@ -1,0 +1,65 @@
+﻿@model IList<Empresa>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listar</h1>
+
+<form asp-action="pesquisar" method="get" class="form-inline">
+    <input placeholder="Digite o nome" name="termoPesquisa" type="text" class="form-control" />
+    <input type="submit" value="Pesquisar" class="btn btn-success" />
+</form>
+
+<table class="table">
+    <tr>
+        <th>CNPJ</th>
+        <th>Razão Social</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th></th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CNPJ</td>
+            <td>@item.RazaoSocial</td>
+            <td>@item.Telefone </td>
+            <td>@item.Email</td>
+            <td>
+                <a asp-action="editar" class="btn btn-primary btn-sm"
+                   asp-route-id="@item. EmpresaId">Editar</a>
+                <!-- Botão para acionar modal -->
+                <button onclick="codigo.value = @item. EmpresaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
+                    Excluir
+                </button>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Deseja Realmente Excluir?
+            </div>
+            <div class="modal-footer">
+                <form asp-action="excluir">
+                    <input type="hidden" name="id" id="codigo" />
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Sim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
