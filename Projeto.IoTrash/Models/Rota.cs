@@ -7,8 +7,10 @@ namespace Projeto.IoTrash.Models
 {
     public class Rota
     {
-        public DayOfWeek Data{get; set;}
+        public int RotaId;
 
+        public DayOfWeek Data{get; set;}
+        
 
     }
 }

@@ -8,6 +8,8 @@ namespace Projeto.IoTrash.Models
     public class Caminhao
     {
 
+        public int CaminhaoId;
+
         public string Placa { get; set; }
 
         public double QuantidadeLixo { get; set; }

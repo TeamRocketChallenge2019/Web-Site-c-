@@ -7,6 +7,7 @@ namespace Projeto.IoTrash.Models
 {
     public class Lixeira
     {
+        public int LixeiraId;
 
         public string DescricaoLixeira { get; set; }
 
