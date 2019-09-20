@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace Projeto.IoTrash.Models
 {
+    [Table("TbEmpresa")]
     public class Empresa
     {
-       
-        public int EmpresaId;
+        [Column("Id"), HiddenInput]
+        public int EmpresaId { get; set; }
 
         [Required]
         public string CNPJ { get; set; }

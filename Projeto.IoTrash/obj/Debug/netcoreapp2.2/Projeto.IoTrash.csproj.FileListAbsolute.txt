@@ -63,3 +63,10 @@ F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcor
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CopyComplete
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Listar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Listar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Atualizar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\_formulario.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\_formulario.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Listar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Cadastrar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Atualizar.g.cshtml.cs

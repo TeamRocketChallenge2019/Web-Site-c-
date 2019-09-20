@@ -1,4 +1,4 @@
-﻿@model IList<Empresa>
+﻿@model IList<Caminhao>
 
 @{
     ViewData["Title"] = "Listar";
@@ -7,36 +7,32 @@
 <h1>Listar</h1>
 
 <form asp-action="pesquisar" method="get" class="form-inline">
-    <input placeholder="Digite o nome" name="termoPesquisa" type="text" class="form-control" />
+    <input placeholder="Digite a placa" name="termoPesquisa" type="text" class="form-control" />
     <input type="submit" value="Pesquisar" class="btn btn-success" />
 </form>
 
 
 <table class="table">
     <tr>
-        <th>Razão Social</th>
-        <th>CNPJ</th>
-        <th>Telefone</th>
-        <th>Email</th>
+        <th>Placa</th>
+        <th>Quantidade de Lixo(Litros)</th>
         <th></th>
 
     </tr>
     @foreach (var item in Model)
     {
-<tr>
-    <td>@item.RazaoSocial</td>
-    <td>@item.CNPJ</td>
-    <td>@item.Telefone </td>
-    <td>@item.Email</td>
-    <td>
-        <a asp-action="atualizar" class="btn btn-primary btn-sm"
-           asp-route-id="@item.EmpresaId">Editar</a>
-        <!-- Botão para acionar modal -->
-        <button onclick="codigo.value = @item.EmpresaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
-            Excluir
-        </button>
-    </td>
-</tr>
+        <tr>
+            <td>@item.Placa</td>
+            <td>@item.QuantidadeLixo</td>
+            <td>
+                <a asp-action="atualizar" class="btn btn-primary btn-sm"
+                   asp-route-id="@item.CaminhaoId">Editar</a>
+                <!-- Botão para acionar modal -->
+                <button onclick="codigo.value = @item.CaminhaoId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
+                    Excluir
+                </button>
+            </td>
+        </tr>
     }
 
 </table>

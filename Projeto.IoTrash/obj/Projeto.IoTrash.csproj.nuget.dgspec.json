@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\2 Ano - 2 Semestre\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {}
+    "C:\\Users\\carol\\Documents\\Fiap\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {}
   },
   "projects": {
-    "F:\\2 Ano - 2 Semestre\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {
+    "C:\\Users\\carol\\Documents\\Fiap\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\2 Ano - 2 Semestre\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+        "projectUniqueName": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
         "projectName": "Projeto.IoTrash",
-        "projectPath": "F:\\2 Ano - 2 Semestre\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
-        "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-        "outputPath": "F:\\2 Ano - 2 Semestre\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\obj\\",
+        "projectPath": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+        "packagesPath": "C:\\Users\\carol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\Projeto.IoTrash\\Projeto.IoTrash\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
