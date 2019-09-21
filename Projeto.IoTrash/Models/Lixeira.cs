@@ -18,7 +18,7 @@ namespace Projeto.IoTrash.Models
         public string DescricaoLixeira { get; set; }
 
         [Required]
-        public string VolumeLixo { get; set; }
+        public int VolumeLixo { get; set; }
 
         [Required]
         public string Endereco { get; set; }

@@ -70,10 +70,12 @@ namespace Projeto.IoTrash.Controllers
 
          public IActionResult Pesquisar(string termoPesquisa)
         {
-            var lista = _context.Empresas.Where
+            var pesquisa =
+                _context.Empresas.Where
                 (c => c.RazaoSocial.Contains(termoPesquisa)).ToList();
 
-            return View("Listar", lista);
+            return View("Listar", pesquisa);
+           
         }
     }
 }

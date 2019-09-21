@@ -65,10 +65,10 @@ namespace Projeto.IoTrash.Controllers
 
           public IActionResult Pesquisar(string termoPesquisa)
         {
-            var lista = _context.Caminhoes.Where
+            var pesquisa = _context.Caminhoes.Where
                 (c => c.Placa.Contains(termoPesquisa)).ToList();
 
-            return View("Listar", lista);
+            return View("Listar", pesquisa);
         }
     }
 }
