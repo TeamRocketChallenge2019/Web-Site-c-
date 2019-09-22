@@ -1,0 +1,10 @@
+﻿@model Rota
+
+
+<div class="form-group">
+    <label asp-for="DiaDaSemana"></label>
+    <select asp-for="DiaDaSemana" class="form-control"
+            asp-items="@Html.GetEnumSelectList<DiaSemana>()">
+        <option>Selecione</option>
+    </select>
+</div>

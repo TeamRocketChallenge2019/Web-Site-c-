@@ -29,7 +29,6 @@ C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debu
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CopyComplete
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Cadastrar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Cadastrar.g.cshtml.cs
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.deps.json
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.json
 F:\2 Ano - 2 Semestre\Challange\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.dev.json
@@ -70,3 +69,11 @@ C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debu
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Listar.g.cshtml.cs
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Cadastrar.g.cshtml.cs
 C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Atualizar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Listar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Cadastrar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\_formulario.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Atualizar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\_formulario.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Cadastrar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Listar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Atualizar.g.cshtml.cs

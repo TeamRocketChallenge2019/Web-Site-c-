@@ -42,7 +42,7 @@ namespace Projeto.IoTrash.Controllers
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
         }
-          [HttpGet]
+          [HttpPost]
          public IActionResult Atualizar(Rota rota)
         {
             _context.Attach(rota).State = EntityState.Modified;
@@ -50,7 +50,7 @@ namespace Projeto.IoTrash.Controllers
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
-         [HttpPost]
+         [HttpGet]
          public IActionResult Atualizar(int id)
         {
             var rota = _context.Rotas.Find(id);

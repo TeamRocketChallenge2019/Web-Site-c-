@@ -14,9 +14,10 @@ namespace Projeto.IoTrash.Models
         [Column("Id"), HiddenInput]
         public int RotaId { get; set; }
 
-        [DataType(DataType.Date)]
+       
         [Required]
-        public DayOfWeek Data{get; set;}
+        [Display(Name = "Dia da Semana")]
+        public DiaSemana DiaDaSemana{get; set;}
         
 
     }
