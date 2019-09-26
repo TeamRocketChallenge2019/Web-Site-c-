@@ -72,7 +72,7 @@ namespace Projeto.IoTrash.Controllers
         {
             var pesquisa =
                 _context.Empresas.Where
-                (c => c.RazaoSocial.Contains(termoPesquisa)).ToList();
+               (c => c.RazaoSocial.Contains(termoPesquisa) || c.CNPJ.Contains(termoPesquisa)).ToList();
 
             return View("Listar", pesquisa);
            
