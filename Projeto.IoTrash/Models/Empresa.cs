@@ -17,7 +17,7 @@ namespace Projeto.IoTrash.Models
         [Required]
         public string CNPJ { get; set; }
 
-        [Display (Name = "Razao Social"), MaxLength(40)]
+        [Display(Name = "Razao Social"), MaxLength(40)]
         [Required]
         public string RazaoSocial { get; set; }
 
@@ -28,5 +28,7 @@ namespace Projeto.IoTrash.Models
         [EmailAddress]
         [Required]
         public string Email { get; set; }
+
+        public IList<Caminhao> Caminhoes { get;set; }
     }
 }

@@ -23,5 +23,9 @@ namespace Projeto.IoTrash.Models
         [Required]
         public string Endereco { get; set; }
 
+
+
+        public Rota Rota { get; set; }
+        public int RotaId { get; set; }
     }
 }

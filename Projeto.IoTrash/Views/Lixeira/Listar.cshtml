@@ -17,6 +17,7 @@
         <th>Descrição Lixeira</th>
         <th>Endereço</th>
         <th>Volume Lixo(Litros)</th>
+        <th>Rota</th>
         <th></th>
 
     </tr>
@@ -26,6 +27,7 @@
     <td>@item.DescricaoLixeira</td>
     <td>@item.Endereco</td>
     <td>@item.VolumeLixo</td>
+    <td>@item.Rota</td>
     <td>
         <a asp-action="atualizar" class="btn btn-primary btn-sm"
            asp-route-id="@item.LixeiraId">Editar</a>

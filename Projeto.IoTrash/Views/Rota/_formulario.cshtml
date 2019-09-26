@@ -1,10 +1,24 @@
 ﻿@model Rota
 
 
+
+    <div class="form-group">
+        <label asp-for="DescricaoRota"></label>
+        <input asp-for="DescricaoRota" class="form-control" />
+    </div>
+
 <div class="form-group">
     <label asp-for="DiaDaSemana"></label>
     <select asp-for="DiaDaSemana" class="form-control"
             asp-items="@Html.GetEnumSelectList<DiaSemana>()">
         <option>Selecione</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label asp-for="Caminhao"></label>
+    <select asp-for="CaminhaoId" class="form-control"
+            asp-items="@ViewBag.caminhoes">
+        <option value="0">Selecione</option>
     </select>
 </div>

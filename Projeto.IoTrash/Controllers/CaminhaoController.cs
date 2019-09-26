@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Models;
 using Projeto.IoTrash.Persistence;
@@ -21,16 +22,26 @@ namespace Projeto.IoTrash.Controllers
             _context = context;
         }
          [HttpGet]
-         public IActionResult Listar()
+         public IActionResult Listar(int empresaBuscar)
         {
-            return View(_context.Caminhoes.ToList());
+            CarregarSelectEmpresas();
+            return View(_context.Caminhoes.Include(e => e.Empresa)
+                .Where(e => e.EmpresaId == empresaBuscar || empresaBuscar == 0).ToList());
         }
          [HttpGet]
          public IActionResult Cadastrar()
         {
+            CarregarSelectEmpresas();
             return View();
         }
-         [HttpPost]
+
+        private void CarregarSelectEmpresas()
+        {
+            var lista = _context.Empresas.ToList();
+            ViewBag.empresas = new SelectList(lista, "EmpresaId", "RazaoSocial");
+        }
+
+        [HttpPost]
          public IActionResult Cadastrar(Caminhao caminhao)
         {
             _context.Caminhoes.Add(caminhao);
@@ -47,7 +58,7 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-          public IActionResult  Atualizar(int id)
+          public IActionResult Atualizar(int id)
         {
             var caminhao = _context.Caminhoes.Find(id);
 

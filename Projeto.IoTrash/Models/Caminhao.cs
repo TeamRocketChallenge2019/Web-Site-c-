@@ -23,5 +23,10 @@ namespace Projeto.IoTrash.Models
         public double QuantidadeLixo { get; set; }
 
 
+        public Empresa Empresa { get; set; }
+
+        public int EmpresaId { get; set; }
+
+        public IList<Rota> Rotas { get; set; }
   }
 }

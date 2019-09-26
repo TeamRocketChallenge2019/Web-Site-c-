@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Models;
 using Projeto.IoTrash.Persistence;
@@ -23,16 +24,31 @@ namespace Projeto.IoTrash.Controllers
         }
 
         [HttpGet]
-        public IActionResult Listar()
+        public IActionResult Listar(int caminhaoBuscar)
         {
-            return View(_context.Rotas.ToList());
+            CarregarSelectCaminhoes();
+
+            return View(_context.Rotas.Include( c => c.Caminhao)
+                      .Where(c => c.CaminhaoId == caminhaoBuscar || caminhaoBuscar == 0).ToList());
+
         }
+
+        private void CarregarSelectCaminhoes()
+        {
+            var lista = _context.Caminhoes.ToList();
+            ViewBag.caminhoes = new SelectList(lista, "CaminhaoId", "Placa");
+        }
+
 
         [HttpGet]
         public IActionResult Cadastrar()
         {
+            CarregarSelectCaminhoes();
             return View();
         }
+
+        
+
 
         [HttpPost]
         public IActionResult Cadastrar(Rota rota)

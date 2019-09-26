@@ -9,22 +9,27 @@
 <table class="table">
     <tr>
         <th>Dia da Semana</th>
+        <th>Descrição Rota</th>
+        <th>Caminhão</th>
         <th></th>
 
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@item.DiaDaSemana</td>
-            <td>
-                <a asp-action="atualizar" class="btn btn-primary btn-sm"
-                   asp-route-id="@item.RotaId">Editar</a>
-                <!-- Botão para acionar modal -->
-                <button onclick="codigo.value = @item.RotaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
-                    Excluir
-                </button>
-            </td>
-        </tr>
+<tr>
+    <td>@item.DiaDaSemana</td>
+    <td>@item.DescricaoRota</td>
+    <td>@item.Caminhao</td>
+
+    <td>
+        <a asp-action="atualizar" class="btn btn-primary btn-sm"
+           asp-route-id="@item.RotaId">Editar</a>
+        <!-- Botão para acionar modal -->
+        <button onclick="codigo.value = @item.RotaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
+            Excluir
+        </button>
+    </td>
+</tr>
     }
 
 </table>
