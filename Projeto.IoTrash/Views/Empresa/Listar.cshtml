@@ -23,23 +23,28 @@
     </tr>
     @foreach (var item in Model)
     {
-<tr>
-    <td>@item.RazaoSocial</td>
-    <td>@item.CNPJ</td>
-    <td>@item.Telefone </td>
-    <td>@item.Email</td>
-    <td>
-        <a asp-action="atualizar" class="btn btn-primary btn-sm"
-           asp-route-id="@item.EmpresaId">Editar</a>
-        <!-- Botão para acionar modal -->
-        <button onclick="codigo.value = @item.EmpresaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
-            Excluir
-        </button>
-    </td>
-</tr>
+        <tr>
+            <td>@item.RazaoSocial</td>
+            <td>@item.CNPJ</td>
+            <td>@item.Telefone </td>
+            <td>@item.Email</td>
+            <td>
+                <a asp-action="atualizar" class="btn btn-primary btn-sm"
+                   asp-route-id="@item.EmpresaId">Editar</a>
+                <!-- Botão para acionar modal -->
+                <button onclick="codigo.value = @item.EmpresaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
+                    Excluir
+                </button>
+                <a asp-action="listar" asp-controller="caminhao"
+                   asp-route-empresaBusca="@item.EmpresaId"
+                   class="btn btn-warning btn-sm">
+                    Caminhões
+                </a>
+            </td>
+        </tr>
     }
-
 </table>
+ 
 
 <!-- Modal -->
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
