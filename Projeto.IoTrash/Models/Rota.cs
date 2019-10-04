@@ -19,7 +19,7 @@ namespace Projeto.IoTrash.Models
 
         [Required]
         [Display(Name = "Dia da Semana")]
-        public DiaSemana DiaDaSemana {get; set;}
+        public DiaSemana DiaDaSemana { get; set; }
 
 
         public IList<Lixeira> Lixeiras { get; set; }
@@ -27,4 +27,4 @@ namespace Projeto.IoTrash.Models
         public Caminhao Caminhao { get; set; }
         public int CaminhaoId { get; set; }
     }
-} 
+}

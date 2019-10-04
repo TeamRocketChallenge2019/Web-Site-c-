@@ -7,6 +7,6 @@ namespace Projeto.IoTrash.Models
 {
     public enum DiaSemana
     {
-        Segunda,Terça,Quarta,Quinta,Sexta,Sabado,Domingo
+        Segunda, Terça, Quarta, Quinta, Sexta, Sabado, Domingo
     }
 }

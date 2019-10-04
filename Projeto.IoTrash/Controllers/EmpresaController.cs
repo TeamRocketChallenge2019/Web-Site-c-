@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
-using Projeto.IoTrash.Persistence;
 
 namespace Projeto.IoTrash.Controllers
 {
+    [Authorize]
     public class EmpresaController : Controller
     {
+       
         private static IList<Empresa> _lista = new List<Empresa>();
 
-        private IoTrashContext _context;
+        private ApplicationDbContext _context;
 
-        public EmpresaController(IoTrashContext context)
+        public EmpresaController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -42,16 +45,16 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-           [HttpPost]
-           public IActionResult Atualizar(Empresa empresa)
+        [HttpPost]
+        public IActionResult Atualizar(Empresa empresa)
         {
             _context.Attach(empresa).State = EntityState.Modified;
             _context.SaveChanges();
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
-          [HttpGet]
-          public IActionResult Atualizar(int id)
+        [HttpGet]
+        public IActionResult Atualizar(int id)
         {
             var empresa = _context.Empresas.Find(id);
 
@@ -59,7 +62,7 @@ namespace Projeto.IoTrash.Controllers
         }
 
         [HttpPost]
-         public IActionResult Remover(int id)
+        public IActionResult Remover(int id)
         {
             var empresa = _context.Empresas.Find(id);
             _context.Empresas.Remove(empresa);
@@ -68,14 +71,14 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-         public IActionResult Pesquisar(string termoPesquisa)
+        public IActionResult Pesquisar(string termoPesquisa)
         {
             var pesquisa =
                 _context.Empresas.Where
                (c => c.RazaoSocial.Contains(termoPesquisa) || c.CNPJ.Contains(termoPesquisa)).ToList();
 
             return View("Listar", pesquisa);
-           
+
         }
     }
 }

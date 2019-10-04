@@ -28,5 +28,5 @@ namespace Projeto.IoTrash.Models
         public int EmpresaId { get; set; }
 
         public IList<Rota> Rotas { get; set; }
-  }
+    }
 }

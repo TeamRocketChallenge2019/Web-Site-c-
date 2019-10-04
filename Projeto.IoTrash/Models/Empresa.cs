@@ -29,6 +29,6 @@ namespace Projeto.IoTrash.Models
         [Required]
         public string Email { get; set; }
 
-        public IList<Caminhao> Caminhoes { get;set; }
+        public IList<Caminhao> Caminhoes { get; set; }
     }
 }

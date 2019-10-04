@@ -2,23 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
-using Projeto.IoTrash.Persistence;
 
 namespace Projeto.IoTrash.Controllers
 {
+    [Authorize]
     public class LixeiraController : Controller
     {
 
         private static IList<Lixeira> _lista = new List<Lixeira>();
 
-        private IoTrashContext _context;
+        private ApplicationDbContext _context;
 
 
-        public LixeiraController(IoTrashContext context)
+        public LixeiraController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -53,8 +55,8 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-          [HttpPost]
-          public IActionResult Atualizar(Lixeira lixeira)
+        [HttpPost]
+        public IActionResult Atualizar(Lixeira lixeira)
         {
             _context.Attach(lixeira).State = EntityState.Modified;
             _context.SaveChanges();
@@ -62,16 +64,16 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-         [HttpGet]
-         public IActionResult Atualizar(int id)
+        [HttpGet]
+        public IActionResult Atualizar(int id)
         {
             var lixeira = _context.Lixeiras.Find(id);
 
             return View(lixeira);
         }
 
-         [HttpPost]
-         public IActionResult Remover(int id)
+        [HttpPost]
+        public IActionResult Remover(int id)
         {
             var lixeira = _context.Lixeiras.Find(id);
             _context.Lixeiras.Remove(lixeira);
@@ -80,8 +82,8 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
-         [HttpGet]
-         public IActionResult Pesquisar(string termoPesquisa)
+        [HttpGet]
+        public IActionResult Pesquisar(string termoPesquisa)
         {
             var pesquisa =
                  _context.Lixeiras.Where

@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Projeto.IoTrash-192D0627-AFB2-4D71-AC26-E04D525DB3D0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto.IoTrash")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

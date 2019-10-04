@@ -22,19 +22,19 @@
     </tr>
     @foreach (var item in Model)
     {
-<tr>
-    <td>@item.Placa</td>
-    <td>@item.QuantidadeLixo</td>
-    <td>@item.Empresa.RazaoSocial</td>
-    <td>
-        <a asp-action="atualizar" class="btn btn-primary btn-sm"
-           asp-route-id="@item.CaminhaoId">Editar</a>
-        <!-- Botão para acionar modal -->
-        <button onclick="codigo.value = @item.CaminhaoId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
-            Excluir
-        </button>
-    </td>
-</tr>
+        <tr>
+            <td>@item.Placa</td>
+            <td>@item.QuantidadeLixo</td>
+            <td>@item.Empresa.RazaoSocial</td>
+            <td>
+                <a asp-action="atualizar" class="btn btn-primary btn-sm"
+                   asp-route-id="@item.CaminhaoId">Editar</a>
+                <!-- Botão para acionar modal -->
+                <button onclick="codigo.value = @item.CaminhaoId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
+                    Excluir
+                </button>
+            </td>
+        </tr>
     }
 
 </table>
@@ -62,3 +62,4 @@
         </div>
     </div>
 </div>
+

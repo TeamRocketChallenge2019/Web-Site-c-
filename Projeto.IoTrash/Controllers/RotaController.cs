@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
-using Projeto.IoTrash.Persistence;
 
 namespace Projeto.IoTrash.Controllers
 {
+    [Authorize]
     public class RotaController : Controller
     {
-
         private static IList<Rota> _lista = new List<Rota>();
 
-        private IoTrashContext _context;
+        private ApplicationDbContext _context;
 
 
-        public RotaController(IoTrashContext context)
+        public RotaController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -28,7 +29,7 @@ namespace Projeto.IoTrash.Controllers
         {
             CarregarSelectCaminhoes();
 
-            return View(_context.Rotas.Include( c => c.Caminhao)
+            return View(_context.Rotas.Include(c => c.Caminhao)
                       .Where(c => c.CaminhaoId == caminhaoBuscar || caminhaoBuscar == 0).ToList());
 
         }
@@ -47,7 +48,7 @@ namespace Projeto.IoTrash.Controllers
             return View();
         }
 
-        
+
 
 
         [HttpPost]
@@ -58,23 +59,23 @@ namespace Projeto.IoTrash.Controllers
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
         }
-          [HttpPost]
-         public IActionResult Atualizar(Rota rota)
+        [HttpPost]
+        public IActionResult Atualizar(Rota rota)
         {
             _context.Attach(rota).State = EntityState.Modified;
             _context.SaveChanges();
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
-         [HttpGet]
-         public IActionResult Atualizar(int id)
+        [HttpGet]
+        public IActionResult Atualizar(int id)
         {
             var rota = _context.Rotas.Find(id);
 
             return View(rota);
         }
-          [HttpPost]
-          public IActionResult Remover(int id)
+        [HttpPost]
+        public IActionResult Remover(int id)
         {
             var rota = _context.Rotas.Find(id);
             _context.Rotas.Remove(rota);
@@ -82,6 +83,6 @@ namespace Projeto.IoTrash.Controllers
             TempData["mensagem"] = "Removido com Sucesso!!";
             return RedirectToAction("Listar");
         }
-        
+
     }
 }
