@@ -10,8 +10,8 @@ using Projeto.IoTrash.Data;
 namespace Projeto.IoTrash.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191003235359_log")]
-    partial class log
+    [Migration("20191004143226_testa")]
+    partial class testa
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

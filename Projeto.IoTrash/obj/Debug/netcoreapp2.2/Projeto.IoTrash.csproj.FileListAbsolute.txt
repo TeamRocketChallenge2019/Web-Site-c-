@@ -45,52 +45,50 @@ C:\Users\carol\Documents\Fiap\Challange\WebSite\Projeto.IoTrash\Projeto.IoTrash\
 C:\Users\carol\Documents\Fiap\Challange\WebSite\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\_formulario.g.cshtml.cs
 C:\Users\carol\Documents\Fiap\Challange\WebSite\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\_formulario.g.cshtml.cs
 C:\Users\carol\Documents\Fiap\Challange\WebSite\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\WebSite\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.deps.json
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.json
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.dev.json
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.dll
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.Views.dll
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.Views.pdb
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csprojAssemblyReference.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CoreCompileInputs.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorAssemblyInfo.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorAssemblyInfo.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.AssemblyInfoInputs.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.AssemblyInfo.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.TagHelpers.input.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.TagHelpers.output.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorCoreGenerate.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Atualizar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Cadastrar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Listar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Atualizar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Cadastrar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Listar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Atualizar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Cadastrar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Listar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Atualizar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Cadastrar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Listar.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\_formulario.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorTargetAssemblyInfo.cache
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorTargetAssemblyInfo.cs
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.Views.pdb
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.dll
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
-C:\Users\carol\Documents\Fiap\Challange\ChallengeNew\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CopyComplete
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.deps.json
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.json
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.runtimeconfig.dev.json
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.dll
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.Views.dll
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\bin\Debug\netcoreapp2.2\Projeto.IoTrash.Views.pdb
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CoreCompileInputs.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorAssemblyInfo.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorAssemblyInfo.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.AssemblyInfoInputs.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.AssemblyInfo.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.TagHelpers.input.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.TagHelpers.output.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorCoreGenerate.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Atualizar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Cadastrar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Listar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\_formulario.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Atualizar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Cadastrar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\Listar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Empresa\_formulario.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Atualizar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Cadastrar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Listar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\_formulario.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Atualizar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Cadastrar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Listar.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\_formulario.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorTargetAssemblyInfo.cache
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.RazorTargetAssemblyInfo.cs
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.Views.pdb
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.dll
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.pdb
+I:\2 Ano - 2 Semestre\Challange\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CopyComplete

@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Projeto.IoTrash.TagHelpers
 {
-    public class BotaoTagHelper : TagHelper
+    public class MensagemTagHelper : TagHelper
     {
         public string Texto { get; set; }
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            output.TagName = "input";
-            output.Attributes.SetAttribute("type", "submit");
-            output.Attributes.SetAttribute("value", Texto);
-            output.Attributes.SetAttribute("class", "btn btn-primary");
+            if (!string.IsNullOrEmpty(Texto))
+            {
+                output.TagName = "div";
+                output.Attributes.SetAttribute("class", "alert alert-success");
+                output.Content.SetContent(Texto);
+            }
         }
     }
 }
-

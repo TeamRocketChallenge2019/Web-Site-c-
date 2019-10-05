@@ -4,7 +4,9 @@
     ViewData["Title"] = "Listar";
 }
 
-<h1>Listar</h1>
+<h1>Listar Caminhão</h1>
+
+<mensagem texto="@TempData["mensagem"]"></mensagem>
 
 <form asp-action="pesquisar" method="get" class="form-inline">
     <input placeholder="Digite a placa" name="termoPesquisa" type="text" class="form-control" />
@@ -16,7 +18,6 @@
     <tr>
         <th>Placa</th>
         <th>Quantidade de Lixo(Litros)</th>
-        <th>Empresa Coleta</th>
         <th></th>
 
     </tr>
@@ -25,7 +26,6 @@
         <tr>
             <td>@item.Placa</td>
             <td>@item.QuantidadeLixo</td>
-            <td>@item.Empresa.RazaoSocial</td>
             <td>
                 <a asp-action="atualizar" class="btn btn-primary btn-sm"
                    asp-route-id="@item.CaminhaoId">Editar</a>
@@ -33,6 +33,11 @@
                 <button onclick="codigo.value = @item.CaminhaoId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
                     Excluir
                 </button>
+                <a asp-action="listar" asp-controller="rota"
+                   asp-route-caminhaoBusca="@item.CaminhaoId"
+                   class="btn btn-warning btn-sm">
+                    Rotas
+                </a>
             </td>
         </tr>
     }

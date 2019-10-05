@@ -4,7 +4,10 @@
     ViewData["Title"] = "Atualizar";
 }
 
-<h1>Atualizar</h1>
+<h1>Atualizar Caminhão</h1>
+
+<mensagem texto="@TempData["mensagem"]"></mensagem>
+
 
 <form asp-action="atualizar">
     <input asp-for="CaminhaoId" />

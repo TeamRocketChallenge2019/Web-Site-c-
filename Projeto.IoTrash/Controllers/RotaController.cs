@@ -84,5 +84,15 @@ namespace Projeto.IoTrash.Controllers
             return RedirectToAction("Listar");
         }
 
+        [HttpGet]
+        public IActionResult Pesquisar(string termoPesquisa)
+        {
+            var pesquisa =
+                 _context.Rotas.Where
+                 (c => c.DescricaoRota.Contains(termoPesquisa)).ToList();
+
+            return View("Listar", pesquisa);
+        }
+
     }
 }

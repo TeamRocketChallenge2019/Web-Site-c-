@@ -4,10 +4,12 @@
     ViewData["Title"] = "Listar";
 }
 
-<h1>Listar</h1>
+<h1>Listar Empresa</h1>
+
+<mensagem texto="@TempData["mensagem"]"></mensagem>
 
 <form asp-action="pesquisar" method="get" class="form-inline">
-    <input placeholder="Digite o nome" name="termoPesquisa" type="text" class="form-control" />
+    <input placeholder="Digite o nome ou CNPJ" name="termoPesquisa" type="text" class="form-control" />
     <input type="submit" value="Pesquisar" class="btn btn-success" />
 </form>
 
