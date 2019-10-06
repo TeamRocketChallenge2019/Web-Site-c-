@@ -8,78 +8,94 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
+using Projeto.IoTrash.Repositories;
+using Projeto.IoTrash.ViewModels;
 
 namespace Projeto.IoTrash.Controllers
 {
     [Authorize]
     public class RotaController : Controller
     {
-        private static IList<Rota> _lista = new List<Rota>();
-
-        private ApplicationDbContext _context;
 
 
-        public RotaController(ApplicationDbContext context)
+        private IRotaRepository _rotRepository;
+        private ICaminhaoRepository _camRepository;
+        private ILixeiraRepository _lixRepository;
+
+
+        public RotaController(IRotaRepository rotRepository,
+                               ICaminhaoRepository camRepository,
+                                ILixeiraRepository lixRepository)
         {
-            _context = context;
+            _rotRepository = rotRepository;
+            _camRepository = camRepository;
+            _lixRepository = lixRepository;
+        }
+
+        [HttpGet]
+        public IActionResult Detalhar(int codigo)
+        {
+            var lixeiras = _lixRepository
+                .FindBy(c => c.RotaId == codigo);
+
+            var rota = _rotRepository.FindById(codigo);
+
+            var viewModel = new DetalheRotaViewModel()
+            {
+                Rota = rota,
+                Lixeiras = lixeiras,
+            };
+            return View(viewModel);
         }
 
         [HttpGet]
         public IActionResult Listar(int caminhaoBuscar)
         {
-            CarregarSelectCaminhoes();
+            
 
-            return View(_context.Rotas.Include(c => c.Caminhao)
-                      .Where(c => c.CaminhaoId == caminhaoBuscar || caminhaoBuscar == 0).ToList());
+            return View(_rotRepository.List());
 
         }
-
-        private void CarregarSelectCaminhoes()
-        {
-            var lista = _context.Caminhoes.ToList();
-            ViewBag.caminhoes = new SelectList(lista, "CaminhaoId", "Placa");
-        }
-
 
         [HttpGet]
         public IActionResult Cadastrar()
         {
-            CarregarSelectCaminhoes();
+            var lista = _camRepository.List();
+            ViewBag.caminhoes = new SelectList(lista, "CaminhaoId", "Placa");
             return View();
         }
-
 
 
 
         [HttpPost]
         public IActionResult Cadastrar(Rota rota)
         {
-            _context.Rotas.Add(rota);
-            _context.SaveChanges();
+            _rotRepository.Create(rota);
+            _rotRepository.Save();
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
         }
         [HttpPost]
         public IActionResult Atualizar(Rota rota)
         {
-            _context.Attach(rota).State = EntityState.Modified;
-            _context.SaveChanges();
+            _rotRepository.Update(rota);
+            _rotRepository.Save();
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
         [HttpGet]
         public IActionResult Atualizar(int id)
         {
-            var rota = _context.Rotas.Find(id);
+            var rota = _rotRepository.FindById(id);
 
             return View(rota);
         }
         [HttpPost]
         public IActionResult Remover(int id)
         {
-            var rota = _context.Rotas.Find(id);
-            _context.Rotas.Remove(rota);
-            _context.SaveChanges();
+            var rota = _rotRepository.FindById(id);
+            _rotRepository.Delete(id);
+            _rotRepository.Save();
             TempData["mensagem"] = "Removido com Sucesso!!";
             return RedirectToAction("Listar");
         }
@@ -88,7 +104,7 @@ namespace Projeto.IoTrash.Controllers
         public IActionResult Pesquisar(string termoPesquisa)
         {
             var pesquisa =
-                 _context.Rotas.Where
+                 _rotRepository.FindBy
                  (c => c.DescricaoRota.Contains(termoPesquisa)).ToList();
 
             return View("Listar", pesquisa);

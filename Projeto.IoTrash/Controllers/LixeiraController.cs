@@ -8,49 +8,45 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
+using Projeto.IoTrash.Repositories;
 
 namespace Projeto.IoTrash.Controllers
 {
     [Authorize]
     public class LixeiraController : Controller
     {
-
-        private static IList<Lixeira> _lista = new List<Lixeira>();
-
-        private ApplicationDbContext _context;
+        private IRotaRepository _rotRepository;
+        private ILixeiraRepository _lixRepository;
 
 
-        public LixeiraController(ApplicationDbContext context)
+        public LixeiraController(IRotaRepository rotRepository,
+                                 ILixeiraRepository lixRepository)
         {
-            _context = context;
+            _rotRepository = rotRepository;
+            _lixRepository = lixRepository;
         }
         [HttpGet]
         public IActionResult Listar(int rotaBuscar)
         {
-            CarregarSelectRotas();
-            return View(_context.Lixeiras.Include(l => l.Rota)
-                        .Where(l => l.RotaId == rotaBuscar || rotaBuscar == 0).ToList());
-        }
-
-        private void CarregarSelectRotas()
-        {
-            var lista = _context.Rotas.ToList();
-            ViewBag.rotas = new SelectList(lista, "RotaId", "DescricaoRota");
+            
+            return View(_lixRepository.List());
         }
 
         [HttpGet]
         public IActionResult Cadastrar()
         {
-            CarregarSelectRotas();
+            var lista = _rotRepository.List();
+            ViewBag.rotas = new SelectList(lista, "RotaId", "DescricaoRota");
             return View();
-
         }
+
+     
 
         [HttpPost]
         public IActionResult Cadastrar(Lixeira lixeira)
         {
-            _context.Lixeiras.Add(lixeira);
-            _context.SaveChanges();
+            _lixRepository.Create(lixeira);
+            _lixRepository.Save();
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
         }
@@ -58,8 +54,8 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Atualizar(Lixeira lixeira)
         {
-            _context.Attach(lixeira).State = EntityState.Modified;
-            _context.SaveChanges();
+            _lixRepository.Update(lixeira);
+            _lixRepository.Save();
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
@@ -67,7 +63,7 @@ namespace Projeto.IoTrash.Controllers
         [HttpGet]
         public IActionResult Atualizar(int id)
         {
-            var lixeira = _context.Lixeiras.Find(id);
+            var lixeira = _lixRepository.FindById(id);
 
             return View(lixeira);
         }
@@ -75,9 +71,9 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Remover(int id)
         {
-            var lixeira = _context.Lixeiras.Find(id);
-            _context.Lixeiras.Remove(lixeira);
-            _context.SaveChanges();
+            var lixeira = _lixRepository.FindById(id);
+            _lixRepository.Delete(id);
+            _lixRepository.Save();
             TempData["mensagem"] = "Removido com Sucesso!!";
             return RedirectToAction("Listar");
         }
@@ -86,7 +82,7 @@ namespace Projeto.IoTrash.Controllers
         public IActionResult Pesquisar(string termoPesquisa)
         {
             var pesquisa =
-                 _context.Lixeiras.Where
+                 _lixRepository.FindBy
                  (c => c.Endereco.Contains(termoPesquisa)).ToList();
 
             return View("Listar", pesquisa);

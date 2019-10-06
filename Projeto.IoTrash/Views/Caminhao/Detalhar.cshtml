@@ -1,0 +1,30 @@
+﻿@model DetalheCaminhaoViewModel
+
+@{
+    ViewData["Title"] = "Detalhar";
+}
+
+<h1>Detalhar</h1>
+
+<h2>Placa: <span class="text-danger">@Model.Caminhao.Placa</span></h2>
+<h5>Qunatidade de Lixo(Litros): <span class="text-danger">@Model.Caminhao.QuantidadeLixo</span> </h5>
+
+
+<h2>Rotas</h2>
+
+<div class="row">
+    @foreach (var item in Model.Rotas)
+    {
+        <div class="col-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    Descriçao da Rota:  <p class="card-text">@item.DescricaoRota </p>
+                    <p class="card-text">
+                        Dia da Semana: <b>@item.DiaDaSemana</b><br />
+
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

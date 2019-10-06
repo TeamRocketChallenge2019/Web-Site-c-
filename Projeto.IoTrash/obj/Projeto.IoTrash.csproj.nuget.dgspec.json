@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "I:\\2 Ano - 2 Semestre\\Challange\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {}
+    "C:\\Users\\carol\\Documents\\Fiap\\Challange\\WebRepos\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {}
   },
   "projects": {
-    "I:\\2 Ano - 2 Semestre\\Challange\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {
+    "C:\\Users\\carol\\Documents\\Fiap\\Challange\\WebRepos\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\2 Ano - 2 Semestre\\Challange\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+        "projectUniqueName": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\WebRepos\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
         "projectName": "Projeto.IoTrash",
-        "projectPath": "I:\\2 Ano - 2 Semestre\\Challange\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+        "projectPath": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\WebRepos\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
         "packagesPath": "C:\\Users\\carol\\.nuget\\packages\\",
-        "outputPath": "I:\\2 Ano - 2 Semestre\\Challange\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\obj\\",
+        "outputPath": "C:\\Users\\carol\\Documents\\Fiap\\Challange\\WebRepos\\ProjetoNovoWeb\\Projeto.IoTrash\\Projeto.IoTrash\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

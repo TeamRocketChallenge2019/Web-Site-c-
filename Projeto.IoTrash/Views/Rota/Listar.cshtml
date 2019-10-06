@@ -33,6 +33,13 @@
                 <button onclick="codigo.value = @item.RotaId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
                     Excluir
                 </button>
+
+                <a class="btn btn-primary"
+                   asp-route-codigo="@item.RotaId"
+                   asp-action="detalhar">
+                    Detalhes
+                </a>
+
                 <a asp-action="listar" asp-controller="lixeira"
                    asp-route-rotaBusca="@item.RotaId"
                    class="btn btn-warning btn-sm">

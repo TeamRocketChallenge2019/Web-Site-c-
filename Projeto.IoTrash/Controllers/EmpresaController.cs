@@ -7,27 +7,46 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Data;
 using Projeto.IoTrash.Models;
+using Projeto.IoTrash.Repositories;
+using Projeto.IoTrash.ViewModels;
 
 namespace Projeto.IoTrash.Controllers
 {
     [Authorize]
     public class EmpresaController : Controller
     {
-       
-        private static IList<Empresa> _lista = new List<Empresa>();
 
-        private ApplicationDbContext _context;
+        private IEmpresaRepository _empRepository;
+        private ICaminhaoRepository _camRepository;
 
-        public EmpresaController(ApplicationDbContext context)
+        public EmpresaController(IEmpresaRepository empRepository,
+                                  ICaminhaoRepository camRepository)
         {
-            _context = context;
+            _empRepository = empRepository;
+            _camRepository = camRepository;
         }
 
+        [HttpGet]
+        public IActionResult Detalhar(int codigo)
+        {
+            var caminhoes = _camRepository
+                .FindBy(c => c.EmpresaId == codigo);
+
+            var empresa = _empRepository.FindById(codigo);
+
+            var viewModel = new DetalheEmpresaViewModel()
+            {
+                Empresa = empresa,
+                Caminhoes = caminhoes,
+            };
+            return View(viewModel);
+            }
+        
 
         [HttpGet]
         public IActionResult Listar()
         {
-            return View(_context.Empresas.ToList());
+            return View(_empRepository.List());
         }
 
         [HttpGet]
@@ -39,24 +58,24 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Empresa empresa)
         {
-            _context.Empresas.Add(empresa);
-            _context.SaveChanges();
-            TempData["mensagem"] = "Cadastrado com Sucesso!!";
+           _empRepository.Create(empresa);
+           _empRepository.Save();
+           TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
         }
 
         [HttpPost]
         public IActionResult Atualizar(Empresa empresa)
         {
-            _context.Attach(empresa).State = EntityState.Modified;
-            _context.SaveChanges();
+            _empRepository.Update(empresa);
+            _empRepository.Save();
             TempData["mensagem"] = "Atualizado com Sucesso!!";
             return RedirectToAction("Listar");
         }
         [HttpGet]
         public IActionResult Atualizar(int id)
         {
-            var empresa = _context.Empresas.Find(id);
+            var empresa = _empRepository.FindById(id);
 
             return View(empresa);
         }
@@ -64,9 +83,9 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Remover(int id)
         {
-            var empresa = _context.Empresas.Find(id);
-            _context.Empresas.Remove(empresa);
-            _context.SaveChanges();
+            var empresa = _empRepository.FindById(id);
+            _empRepository.Delete(id);
+            _empRepository.Save();
             TempData["mensagem"] = "Removido com Sucesso!!";
             return RedirectToAction("Listar");
         }
@@ -74,7 +93,7 @@ namespace Projeto.IoTrash.Controllers
         public IActionResult Pesquisar(string termoPesquisa)
         {
             var pesquisa =
-                _context.Empresas.Where
+                _empRepository.FindBy
                (c => c.RazaoSocial.Contains(termoPesquisa) || c.CNPJ.Contains(termoPesquisa)).ToList();
 
             return View("Listar", pesquisa);

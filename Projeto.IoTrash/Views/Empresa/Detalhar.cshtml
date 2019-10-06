@@ -1,0 +1,36 @@
+﻿@model DetalheEmpresaViewModel
+
+@{
+    ViewData["Title"] = "Detalhar";
+}
+
+<h1>Detalhar</h1>
+
+<h2>Razão Social: <span class="text-danger">@Model.Empresa.RazaoSocial</span></h2>
+<h5>CNPJ: <span class="text-danger">@Model.Empresa.CNPJ</span> </h5>
+<h5>E-Mail: <span class="text-danger">@Model.Empresa.Email</span></h5>
+<h5>Telefone: <span class="text-danger">@Model.Empresa.Telefone</span></h5>
+
+
+
+<h2>Caminhões</h2>
+
+<div class="row">
+    @foreach (var item in Model.Caminhoes)
+    {
+        <div class="col-2 mb-2">
+            <div class="card">
+                <div class="card-body">
+                  Placa:  <p class="card-text">@item.Placa </p>
+                    <p class="card-text">
+                        Qtd Lixo(Litros): <b>@item.QuantidadeLixo</b><br />
+                       
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+

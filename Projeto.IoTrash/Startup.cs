@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Projeto.IoTrash.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Projeto.IoTrash.Repositories;
 
 namespace Projeto.IoTrash
 {
@@ -28,6 +29,12 @@ namespace Projeto.IoTrash
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+            services.AddScoped<ICaminhaoRepository, CaminhaoRepository>();
+            services.AddScoped<IRotaRepository ,  RotaRepository> ();
+            services.AddScoped <ILixeiraRepository , LixeiraRepository> ();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

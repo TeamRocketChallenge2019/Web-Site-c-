@@ -33,6 +33,13 @@
                 <button onclick="codigo.value = @item.CaminhaoId" class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalExemplo">
                     Excluir
                 </button>
+
+                <a class="btn btn-primary"
+                   asp-route-codigo="@item.CaminhaoId"
+                   asp-action="detalhar">
+                    Detalhes
+                </a>
+
                 <a asp-action="listar" asp-controller="rota"
                    asp-route-caminhaoBusca="@item.CaminhaoId"
                    class="btn btn-warning btn-sm">
