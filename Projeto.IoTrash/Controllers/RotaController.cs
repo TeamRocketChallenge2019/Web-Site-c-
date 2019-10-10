@@ -57,11 +57,16 @@ namespace Projeto.IoTrash.Controllers
 
         }
 
-        [HttpGet]
-        public IActionResult Cadastrar()
+        private void CarregarSelectCaminhoes()
         {
             var lista = _camRepository.List();
             ViewBag.caminhoes = new SelectList(lista, "CaminhaoId", "Placa");
+        }
+
+        [HttpGet]
+        public IActionResult Cadastrar()
+        {
+            CarregarSelectCaminhoes();
             return View();
         }
 
@@ -86,6 +91,8 @@ namespace Projeto.IoTrash.Controllers
         [HttpGet]
         public IActionResult Atualizar(int id)
         {
+            CarregarSelectCaminhoes();
+
             var rota = _rotRepository.FindById(id);
 
             return View(rota);

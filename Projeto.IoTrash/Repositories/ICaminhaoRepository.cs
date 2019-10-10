@@ -24,6 +24,7 @@ namespace Projeto.IoTrash.Repositories
 
         IList<Caminhao> FindBy(Expression<Func<Caminhao, bool>> filtro);
 
+        void CarregarSelectEmpresas();
 
     }
 }

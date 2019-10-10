@@ -17,6 +17,12 @@ namespace Projeto.IoTrash.Repositories
             _context = context;
         }
 
+        public void CarregarSelectCaminhoes()
+        {
+            var rota = _context.Caminhoes.ToList();
+            _context.Caminhoes.ToList();
+        }
+
         public void Create(Rota rota)
         {
             _context.Rotas.Add(rota);

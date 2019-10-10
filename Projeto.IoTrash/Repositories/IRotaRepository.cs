@@ -23,5 +23,7 @@ namespace Projeto.IoTrash.Repositories
         void Save();
 
         IList<Rota> FindBy(Expression<Func<Rota, bool>> filtro);
+
+        void CarregarSelectCaminhoes();
     }
 }

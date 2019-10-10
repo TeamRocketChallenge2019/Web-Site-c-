@@ -18,6 +18,11 @@ namespace Projeto.IoTrash.Repositories
         _context = context;
     }
 
+        public void CarregarSelectEmpresas()
+        {
+            var empresa = _context.Empresas.ToList();
+            _context.Empresas.ToList();
+        }
 
         public void Create(Caminhao caminhao)
         {

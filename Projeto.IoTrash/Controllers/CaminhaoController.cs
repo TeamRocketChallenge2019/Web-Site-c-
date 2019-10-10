@@ -51,13 +51,21 @@ namespace Projeto.IoTrash.Controllers
             return View(_camRepository.List());
         }
 
-        [HttpGet]
-        public IActionResult Cadastrar()
+        private void CarregarSelectEmpresas()
         {
             var lista = _empRepository.List();
             ViewBag.empresas = new SelectList(lista, "EmpresaId", "RazaoSocial");
+        }
+
+        [HttpGet]
+        public IActionResult Cadastrar()
+        {
+            CarregarSelectEmpresas();
             return View();
         }
+
+     
+
         [HttpPost]
         public IActionResult Cadastrar(Caminhao caminhao)
         {
@@ -66,6 +74,8 @@ namespace Projeto.IoTrash.Controllers
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Cadastrar");
         }
+
+
         [HttpPost]
         public IActionResult Atualizar(Caminhao caminhao)
         {
@@ -77,6 +87,8 @@ namespace Projeto.IoTrash.Controllers
 
         public IActionResult Atualizar(int id)
         {
+            CarregarSelectEmpresas();
+
             var caminhao = _camRepository.FindById(id);
 
             return View(caminhao);
