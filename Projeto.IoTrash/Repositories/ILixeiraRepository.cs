@@ -23,5 +23,7 @@ namespace Projeto.IoTrash.Repositories
         void Save();
 
         IList<Lixeira> FindBy(Expression<Func<Lixeira, bool>> filtro);
+
+        void CarregarSelectRotas();
     }
 }

@@ -192,3 +192,4 @@ C:\Users\carol\Documents\Fiap\Challange\WebRepos\ProjetoNovoWeb\Projeto.IoTrash\
 C:\Users\carol\Documents\Fiap\Challange\WebRepos\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Projeto.IoTrash.csproj.CopyComplete
 C:\Users\carol\Documents\Fiap\Challange\WebRepos\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Caminhao\Detalhar.g.cshtml.cs
 C:\Users\carol\Documents\Fiap\Challange\WebRepos\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Rota\Detalhar.g.cshtml.cs
+C:\Users\carol\Documents\Fiap\Challange\WebRepos\ProjetoNovoWeb\Projeto.IoTrash\Projeto.IoTrash\obj\Debug\netcoreapp2.2\Razor\Views\Lixeira\Lixeira.g.cshtml.cs

@@ -72,7 +72,7 @@ namespace Projeto.IoTrash.Controllers
             _camRepository.Create(caminhao);
             _camRepository.Save();
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
-            return RedirectToAction("Cadastrar");
+            return RedirectToAction("Listar");
         }
 
 

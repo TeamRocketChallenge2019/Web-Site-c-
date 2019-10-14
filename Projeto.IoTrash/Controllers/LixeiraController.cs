@@ -25,6 +25,18 @@ namespace Projeto.IoTrash.Controllers
             _rotRepository = rotRepository;
             _lixRepository = lixRepository;
         }
+
+        public IActionResult Lixeira()
+        {
+            return View();
+        }
+
+        private void CarregarSelectRotas()
+        {
+            var lista = _rotRepository.List();
+            ViewBag.rotas = new SelectList(lista, "RotaId", "DescricaoRota");
+        }
+
         [HttpGet]
         public IActionResult Listar(int rotaBuscar)
         {
@@ -35,8 +47,7 @@ namespace Projeto.IoTrash.Controllers
         [HttpGet]
         public IActionResult Cadastrar()
         {
-            var lista = _rotRepository.List();
-            ViewBag.rotas = new SelectList(lista, "RotaId", "DescricaoRota");
+            CarregarSelectRotas();
             return View();
         }
 
@@ -63,6 +74,8 @@ namespace Projeto.IoTrash.Controllers
         [HttpGet]
         public IActionResult Atualizar(int id)
         {
+            CarregarSelectRotas();
+
             var lixeira = _lixRepository.FindById(id);
 
             return View(lixeira);

@@ -22,6 +22,12 @@ namespace Projeto.IoTrash.Repositories
             _context.Lixeiras.Add(lixeira);
         }
 
+        public void CarregarSelectRotas()
+        {
+            var rota = _context.Rotas.ToList();
+            _context.Rotas.ToList();
+        }
+
         public void Delete(int id)
         {
             var lixeira = _context.Lixeiras.Find(id);
