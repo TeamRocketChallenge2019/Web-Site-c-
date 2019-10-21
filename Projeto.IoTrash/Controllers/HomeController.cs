@@ -9,7 +9,7 @@ using Projeto.IoTrash.Models;
 
 namespace Projeto.IoTrash.Controllers
 {
-    [Authorize]
+    
     public class HomeController : Controller
     {
         public IActionResult Index()

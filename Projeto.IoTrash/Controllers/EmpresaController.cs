@@ -58,10 +58,17 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Empresa empresa)
         {
-           _empRepository.Create(empresa);
-           _empRepository.Save();
-           TempData["mensagem"] = "Cadastrado com Sucesso!!";
-            return RedirectToAction("Listar");
+            if (ModelState.IsValid)
+            {
+                 _empRepository.Create(empresa);
+                 _empRepository.Save();
+                TempData["mensagem"] = "Cadastrado com Sucesso!!";
+                return RedirectToAction("Listar");
+        }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpPost]

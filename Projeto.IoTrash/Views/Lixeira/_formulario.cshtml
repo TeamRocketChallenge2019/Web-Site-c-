@@ -1,25 +1,34 @@
 ﻿@model Lixeira
 
 
-<div class="form-group">
-    <label asp-for="DescricaoLixeira"></label>
-    <input asp-for="DescricaoLixeira" class="form-control" />
-</div>
+    <div class="form-group">
+        <label asp-for="DescricaoLixeira"></label>
+        <input asp-for="DescricaoLixeira" class="form-control" />
+        <span asp-validation-for="DescricaoLixeira" class="text-danger"></span>
+    </div>
 
-<div class="form-group">
-    <label asp-for="VolumeLixo"></label>
-    <input asp-for="VolumeLixo" class="form-control" />
-</div>
+    <div class="form-group">
+        <label asp-for="VolumeLixo"></label>
+        <input asp-for="VolumeLixo" class="form-control" />
+        <span asp-validation-for="VolumeLixo" class="text-danger"></span>
+    </div>
 
-<div class="form-group">
-    <label asp-for="Endereco"></label>
-    <input asp-for="Endereco" class="form-control" />
-</div>
+    <div class="form-group">
+        <label asp-for="Endereco"></label>
+        <input asp-for="Endereco" class="form-control" />
+        <span asp-validation-for="Endereco" class="text-danger"></span>
+    </div>
 
-<div class="form-group">
-    <label asp-for="Rota"></label>
-    <select asp-for="RotaId" class="form-control"
-            asp-items="@ViewBag.rotas">
-        <option value="0">Selecione</option>
-    </select>
-</div>
+    <div class="form-group">
+        <label asp-for="Rota"></label>
+        <select asp-for="RotaId" class="form-control"
+                asp-items="@ViewBag.rotas">
+            <option value="0">Selecione</option>
+        </select>
+    </div>
+
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+    </script>
+}

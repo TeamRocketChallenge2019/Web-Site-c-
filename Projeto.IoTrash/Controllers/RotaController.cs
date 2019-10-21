@@ -75,11 +75,20 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Rota rota)
         {
-            _rotRepository.Create(rota);
-            _rotRepository.Save();
-            TempData["mensagem"] = "Cadastrado com Sucesso!!";
-            return RedirectToAction("Listar");
+            if (ModelState.IsValid)
+            {
+                _rotRepository.Create(rota);
+                _rotRepository.Save();
+                TempData["mensagem"] = "Cadastrado com Sucesso!!";
+                return RedirectToAction("Listar");
+            }
+            else
+            {
+                return View();
+            }
         }
+
+
         [HttpPost]
         public IActionResult Atualizar(Rota rota)
         {

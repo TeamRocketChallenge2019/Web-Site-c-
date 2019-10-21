@@ -17,12 +17,13 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
+    
 </head>
 <body>
     <header>
-        <img src="~/iotrash.png" class="img-responsive" alt="Imagem Responsiva">
-
+   
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <img src="~/iotrash.png" class="img-responsive" alt="Imagem Responsiva">
             <div class="container">
 
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IoTrash</a>
@@ -66,7 +67,7 @@
                             <ul class="dropdown-menu">
                                 <li><a asp-controller="lixeira" asp-action="cadastrar">Cadastrar</a></li>
                                 <li><a asp-controller="lixeira" asp-action="listar">Listar</a></li>
-                                <li><a asp-controller="lixeira" asp-action="lixeira">Lixeiras</a></li>
+                                <li><a asp-controller="lixeira" asp-action="lixeira">Monitoramento</a></li>
                             </ul>
                         </li>
 

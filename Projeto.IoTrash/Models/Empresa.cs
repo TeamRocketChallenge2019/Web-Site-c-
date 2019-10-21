@@ -14,19 +14,19 @@ namespace Projeto.IoTrash.Models
         [Column("Id"), HiddenInput]
         public int EmpresaId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "CNPJ obrigatório")]
         public string CNPJ { get; set; }
 
-        [Display(Name = "Razao Social"), MaxLength(40)]
-        [Required]
+        [Display(Name = "Razão Social")]
+        [Required(ErrorMessage = "Razão Social Obrigatória")]
         public string RazaoSocial { get; set; }
 
         [Phone]
-        [Required]
+        [Required(ErrorMessage = "Telefone obrigatório")]
         public string Telefone { get; set; }
 
         [EmailAddress]
-        [Required]
+        [Required(ErrorMessage = "Email obrigatório")]
         public string Email { get; set; }
 
         public IList<Caminhao> Caminhoes { get; set; }

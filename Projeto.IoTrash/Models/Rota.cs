@@ -14,16 +14,18 @@ namespace Projeto.IoTrash.Models
         [Column("Id"), HiddenInput]
         public int RotaId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Descrição Obrigaória")]
+        [Display(Name = "Descrição Rota")]
         public string DescricaoRota { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Dia da Semana Obrigatório")]
         [Display(Name = "Dia da Semana")]
         public DiaSemana DiaDaSemana { get; set; }
 
 
         public IList<Lixeira> Lixeiras { get; set; }
 
+        [Display(Name = "Caminhão")]
         public Caminhao Caminhao { get; set; }
         public int CaminhaoId { get; set; }
     }

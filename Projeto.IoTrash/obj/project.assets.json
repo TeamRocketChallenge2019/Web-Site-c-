@@ -12939,11 +12939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\2 Ano - 2 Semestre\\Web-Site-c--master\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+      "projectUniqueName": "C:\\Users\\carol\\Downloads\\Web-Site-c--master\\Web-Site-c--master\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
       "projectName": "Projeto.IoTrash",
-      "projectPath": "I:\\2 Ano - 2 Semestre\\Web-Site-c--master\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
+      "projectPath": "C:\\Users\\carol\\Downloads\\Web-Site-c--master\\Web-Site-c--master\\Projeto.IoTrash\\Projeto.IoTrash.csproj",
       "packagesPath": "C:\\Users\\carol\\.nuget\\packages\\",
-      "outputPath": "I:\\2 Ano - 2 Semestre\\Web-Site-c--master\\Projeto.IoTrash\\obj\\",
+      "outputPath": "C:\\Users\\carol\\Downloads\\Web-Site-c--master\\Web-Site-c--master\\Projeto.IoTrash\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

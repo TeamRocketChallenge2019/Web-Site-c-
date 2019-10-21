@@ -56,10 +56,17 @@ namespace Projeto.IoTrash.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Lixeira lixeira)
         {
-            _lixRepository.Create(lixeira);
+            if (ModelState.IsValid)
+            {
+                _lixRepository.Create(lixeira);
             _lixRepository.Save();
             TempData["mensagem"] = "Cadastrado com Sucesso!!";
             return RedirectToAction("Listar");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpPost]

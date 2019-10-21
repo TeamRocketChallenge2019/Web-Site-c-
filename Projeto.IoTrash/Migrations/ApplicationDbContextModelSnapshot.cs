@@ -219,8 +219,7 @@ namespace Projeto.IoTrash.Migrations
                         .IsRequired();
 
                     b.Property<string>("RazaoSocial")
-                        .IsRequired()
-                        .HasMaxLength(40);
+                        .IsRequired();
 
                     b.Property<string>("Telefone")
                         .IsRequired();

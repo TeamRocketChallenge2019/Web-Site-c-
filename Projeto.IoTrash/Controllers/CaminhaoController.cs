@@ -53,26 +53,36 @@ namespace Projeto.IoTrash.Controllers
 
         private void CarregarSelectEmpresas()
         {
-            var lista = _empRepository.List();
+            
+                var lista = _empRepository.List();
             ViewBag.empresas = new SelectList(lista, "EmpresaId", "RazaoSocial");
         }
 
         [HttpGet]
         public IActionResult Cadastrar()
         {
-            CarregarSelectEmpresas();
-            return View();
+            
+                CarregarSelectEmpresas();
+                    return View();
         }
+            
 
-     
+
 
         [HttpPost]
         public IActionResult Cadastrar(Caminhao caminhao)
         {
-            _camRepository.Create(caminhao);
-            _camRepository.Save();
-            TempData["mensagem"] = "Cadastrado com Sucesso!!";
-            return RedirectToAction("Listar");
+            if (ModelState.IsValid) 
+            {
+               _camRepository.Create(caminhao);
+               _camRepository.Save();
+               TempData["mensagem"] = "Cadastrado com Sucesso!!";
+               return RedirectToAction("Listar");
+            }
+            else
+            {
+                return View();
+            }
         }
 
 

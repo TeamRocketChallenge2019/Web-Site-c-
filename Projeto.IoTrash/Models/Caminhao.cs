@@ -16,11 +16,13 @@ namespace Projeto.IoTrash.Models
         public int CaminhaoId { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Placa Obrigatória")]
         public string Placa { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Qtd.Lixo Obrigatória")]
+        [Display(Name = "Qtd de Lixo")]
         public double QuantidadeLixo { get; set; }
+
 
 
         public Empresa Empresa { get; set; }

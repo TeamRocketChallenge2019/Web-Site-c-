@@ -14,15 +14,17 @@ namespace Projeto.IoTrash.Models
         [Column("Id"), HiddenInput]
         public int LixeiraId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Descrição Obrigatória")]
+        [Display(Name = "Descrição Lixeira")]
         public string DescricaoLixeira { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Volume Lixo Obrigatório")]
+        [Display(Name = "Volume Lixo")]
         public int VolumeLixo { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Endereço Obrigatório")]
+        [Display(Name = "Endereço")]
         public string Endereco { get; set; }
-
 
 
         public Rota Rota { get; set; }
